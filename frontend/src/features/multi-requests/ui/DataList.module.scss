@@ -1,0 +1,52 @@
+.container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.head {
+  font-weight: bold;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  padding: 5px 10px;
+  height: 40px;
+
+  &:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+.status {
+  border-radius: 5px;
+  padding: 2px 5px;
+  color: white;
+
+  &.success {
+    background-color: #04aa6d;
+  }
+
+  &.error {
+    background-color: purple;
+  }
+}
+
+.emptyStatePlaceholder {
+  padding: 5px 10px;
+  text-align: center;
+  background-color: lightblue;
+}
